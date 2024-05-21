@@ -21,7 +21,7 @@ try{
     }
 //----------------
 //передавать данные в FRONTEND
-app.use(cors({ credentials: true, origin: 'https://frontender-3da9cea69a51.herokuapp.com/' }));
+app.use(cors({ credentials: true, origin: 'https://frontender-3da9cea69a51.herokuapp.com' }));
 app.use(cookieParser());
 app.use(express.json());
 app.get('/', function (req, res) {
