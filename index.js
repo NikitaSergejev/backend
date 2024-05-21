@@ -38,4 +38,11 @@ app.use('/comments', commentrouter);
 
 
 //---------------------
-app.listen(5000, () => console.log('Server OK, running at port 5000'));
+const PORT = process.env.PORT || 5000;
+const HOST = '0.0.0.0';
+
+app.listen(PORT, HOST, (error) => {
+   error
+      ? console.log(error)
+      : console.log(`Server OK. listening port ${PORT}`);
+});
